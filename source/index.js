@@ -1,17 +1,31 @@
-// Section 1.
+// 1.
 //   1.1.
 //     1.1.1.
 //       1.1.1.1.
+//
+// Section 1.1.1.1.
 
+var Immutable = require('immutable');
 var alpha = require('lower-alpha');
 
+var standardGet = function(object, key) {
+  return object[key];
+};
+
+var immutableGet = function(object, key) {
+  return object.get(key);
+};
+
 var number = function(numbering) {
+  var get = Immutable.List.isList(numbering) ?
+    immutableGet : standardGet;
   return numbering
     .map(function(component) {
-      var series = component.series;
-      return series.of > 1 ?
-        alpha(series.number) + '-' + component.element.number :
-        component.element.number;
+      var element = get(component, 'element');
+      var series = get(component, 'series');
+      return get(series, 'of') > 1 ?
+        alpha(get(series, 'number')) + '-' + get(element, 'number') :
+        get(element, 'number');
     })
     .join('.')
     .toUpperCase();
