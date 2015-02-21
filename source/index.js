@@ -28,4 +28,4 @@ exports.reference = function(numbering) {
   return 'Clause ' + number(numbering);
 };
 
-exports.version = '0.1.0';
+exports.version = '0.1.1';
