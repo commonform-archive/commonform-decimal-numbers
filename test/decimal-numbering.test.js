@@ -1,6 +1,7 @@
 /* jshint node: true, mocha: true */
 var Immutable = require('immutable');
 var expect = require('chai').expect;
+
 var decimal = require('..');
 
 var xofy = function(x, y) {
