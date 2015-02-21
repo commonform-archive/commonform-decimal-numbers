@@ -1,5 +1,4 @@
 /* jshint node: true, mocha: true */
-var Immutable = require('immutable');
 var expect = require('chai').expect;
 
 var decimal = require('..');
@@ -33,18 +32,6 @@ describe('decimal numbering', function() {
         {series: xofy(1, 1), element: xofy(1, 1)},
         {series: xofy(1, 1), element: xofy(1, 1)}
       ]))
-          .to.equal('Clause 1.1.1.1');
-    });
-  });
-
-  describe('immutable input', function() {
-    it('produces the same result', function() {
-      expect(decimal.reference(Immutable.fromJS([
-        {series: xofy(1, 1), element: xofy(1, 1)},
-        {series: xofy(1, 1), element: xofy(1, 1)},
-        {series: xofy(1, 1), element: xofy(1, 1)},
-        {series: xofy(1, 1), element: xofy(1, 1)}
-      ])))
           .to.equal('Clause 1.1.1.1');
     });
   });
