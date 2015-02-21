@@ -1,10 +1,12 @@
 {
+  "name": "commonform-decimal-numbers",
+  "description": "decimal contract number style",
+  "version": "0.1.0",
   "author": {
     "name": "Kyle E. Mitchell",
     "email": "kyle@kemitchell.com",
     "url": "http://kemitchell.com/"
   },
-  "description": "decimal contract number style",
   "dependencies": {
     "lower-alpha": "^1.0.0"
   },
@@ -26,7 +28,6 @@
   ],
   "license": "Apache-2.0",
   "main": "source/index",
-  "name": "commonform-decimal-numbers",
   "repository": {
     "type": "git",
     "url": "https://github.com/commonform/commonform-decimal-numbers.git"
@@ -38,6 +39,5 @@
     "pre-commit": "npm run lint && npm run check && npm run coverage",
     "test": "mocha",
     "travis-ci": "npm run pre-commit"
-  },
-  "version": "0.1.0"
+  }
 }
