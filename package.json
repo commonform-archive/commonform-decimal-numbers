@@ -4,7 +4,7 @@
     "email": "kyle@kemitchell.com",
     "url": "http://kemitchell.com/"
   },
-  "description": "decimal contract numbering style",
+  "description": "decimal contract number style",
   "dependencies": {
     "lower-alpha": "^1.0.0"
   },
@@ -16,7 +16,7 @@
     "jshint": "^2.5.10",
     "mocha": "^2.0.1"
   },
-  "homepage": "https://github.com/commonform/commonform-decimal-numbering",
+  "homepage": "https://github.com/commonform/commonform-decimal-numbers",
   "keywords": [
     "contracts",
     "document assembly",
@@ -26,10 +26,10 @@
   ],
   "license": "Apache-2.0",
   "main": "source/index",
-  "name": "commonform-decimal-numbering",
+  "name": "commonform-decimal-numbers",
   "repository": {
     "type": "git",
-    "url": "https://github.com/commonform/commonform-decimal-numbering.git"
+    "url": "https://github.com/commonform/commonform-decimal-numbers.git"
   },
   "scripts": {
     "check": "check-versions --check-module",
